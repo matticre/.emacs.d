@@ -1,0 +1,32 @@
+;; -*- emacs-lisp -*- <24/03/17 13:31:56 /home/mattia/.emacs.d/tramp>
+;; Tramp connection history.  Don't change this file.
+;; Run `M-x tramp-cleanup-all-connections' instead.
+
+(((tramp-file-name "ssh" "macretar" nil "lxplus.cern.ch" nil nil nil)
+  ("uname" "Linux 5.14.0-362.18.1.el9_3.x86_64")
+  ("locale" "LC_ALL=en_US.utf8")
+  ("test" "test")
+  ("remote-path"
+   ("/usr/bin" "/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
+  ("pipe-buf" 4096)
+  ("remote-shell" "/bin/sh")
+  ("file-exists" "test -e")
+  ("case-insensitive" nil)
+  ("readlink" "\\readlink")
+  ("stat" "env QUOTING_STYLE=locale \\stat")
+  ("id" "/usr/bin/id")
+  ("gid-integer" 1307)
+  ("gid-string" "zp")
+  ("ls" "/usr/bin/ls --color=never")
+  ("ls--quoting-style=literal --show-control-chars" "--quoting-style=literal --show-control-chars")
+  ("ls--dired" "--dired")
+  ("df-blocksize" 1)
+  ("df" "\\df --block-size=1 --output=size,used,avail")
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")
+  ("uid-integer" 167893)
+  ("tmpdir" "/ssh:macretar@lxplus.cern.ch:/tmp")
+  ("touch-t" t)
+  ("touch" "\\touch")
+  ("~" "/afs/cern.ch/user/m/macretar")))
