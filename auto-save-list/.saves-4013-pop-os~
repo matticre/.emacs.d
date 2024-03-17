@@ -1,0 +1,6 @@
+/ssh:macretar@lxplus.cern.ch:/eos/user/m/macretar/training/plot/plot_disc.py
+/tmp/#!ssh:macretar@lxplus.cern.ch:!eos!user!m!macretar!training!plot!plot_disc.py#
+/ssh:macretar@lxplus.cern.ch:/eos/user/m/macretar/training/plot/disc_3D.py
+/tmp/#!ssh:macretar@lxplus.cern.ch:!eos!user!m!macretar!training!plot!disc_3D.py#
+/ssh:macretar@lxplus.cern.ch:/eos/user/m/macretar/training/plot/make_plots.py
+/tmp/#!ssh:macretar@lxplus.cern.ch:!eos!user!m!macretar!training!plot!make_plots.py#
