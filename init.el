@@ -12,8 +12,14 @@
  '(global-display-line-numbers-mode t)
  '(inhibit-startup-screen t)
  '(ispell-dictionary nil)
- '(package-selected-packages '(company lsp-mode evil cmake-mode))
+ '(package-selected-packages '(gnu-elpa-keyring-update company lsp-mode evil cmake-mode))
  '(show-paren-mode t))
+;;(menu-bar-mode -1)
+(tool-bar-mode -1)
+(defun my-c++-mode-hook ()
+  (setq c-basic-offset 4)
+  (c-set-offset 'substatement-open 0))
+(add-hook 'c++-mode-hook 'my-c++-mode-hook)
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -24,9 +30,10 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 ;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
 ;; and `package-pinned-packages`. Most users will not need or want to do this.
-;;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (package-initialize)
 (add-to-list 'package-archives
              '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 
 (add-hook 'after-init-hook 'global-company-mode)
+;;;; Code Completion
